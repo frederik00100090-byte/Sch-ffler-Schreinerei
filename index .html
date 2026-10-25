@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Manfred Schäffler Schreinerei – Möbeltischler in Maselheim-Laupertshausen</title>
+<meta name="description" content="Manfred Schäffler Schreinerei in Maselheim-Laupertshausen: Möbeltischler. Anfrage stellen oder direkt anrufen: +49 7351 71780.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe7d2;--paper:#f8f3e4;--moss:#4c5d41;--ink:#262016;--dark:#1f2a1d;--wood:#a2713c;--line:rgba(38,32,22,.14);--r:18px;--ease:cubic-bezier(.22,.8,.2,1)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;font-size:17px;padding:env(safe-area-inset-top,0) 0 calc(88px + env(safe-area-inset-bottom,0));overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--moss);outline-offset:3px;border-radius:8px}
+h1,h2,h3{line-height:1.05;letter-spacing:-.03em;font-weight:600}
+h1{font-size:clamp(2.6rem,8.5vw,6.6rem)}
+h2{font-size:clamp(1.9rem,4.6vw,3.4rem)}
+h3{font-size:1.35rem;letter-spacing:-.01em}
+p{max-width:62ch}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section{padding:72px 0}
+/* Navigation */
+header{position:fixed;top:calc(12px + env(safe-area-inset-top,0));left:0;right:0;z-index:20;display:flex;justify-content:center;pointer-events:none}
+nav{pointer-events:auto;display:flex;align-items:center;gap:4px;background:rgba(248,243,228,.92);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:999px;padding:6px}
+.brand{font-weight:700;padding:8px 14px;text-decoration:none;white-space:nowrap}
+nav a.l{text-decoration:none;padding:9px 16px;border-radius:999px;font-weight:500;transition:background .25s var(--ease),color .25s}
+nav a.l:hover{background:rgba(76,93,65,.12)}
+nav a.l[aria-current=page]{background:var(--moss);color:#fff}
+@media(max-width:640px){.brand{display:none}nav a.l{padding:9px 12px;font-size:.95rem}}
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer;font:inherit;font-weight:600;text-decoration:none;padding:15px 26px;border-radius:999px;background:var(--moss);color:#fff;transition:transform .25s var(--ease),background .25s}
+.btn:hover{transform:translateY(-2px);background:#3d4c34}
+.btn.o{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.o:hover{background:var(--ink);color:var(--bg)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+/* Seiten */
+.page{display:none}
+.page.on{display:block;animation:in .5s var(--ease)}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+/* Hero */
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 60px}
+.hero .wrap{position:relative;z-index:2}
+.hero p.lead{font-size:clamp(1.1rem,2.2vw,1.4rem);margin-top:24px}
+.rings{position:absolute;right:-18vmin;top:50%;width:92vmin;height:92vmin;margin-top:-46vmin;z-index:1;opacity:.55;will-change:transform}
+.rings circle{fill:none;stroke:var(--wood);stroke-width:1.4}
+.hero h1 span{display:block;overflow:hidden}
+.hero h1 span i{display:block;font-style:normal;animation:up .9s var(--ease) both}
+.hero h1 span:nth-child(2) i{animation-delay:.12s}
+@keyframes up{from{transform:translateY(105%)}}
+.score{display:inline-flex;align-items:center;gap:10px;margin-top:30px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-weight:500}
+.stars{color:#c9871c;letter-spacing:2px}
+/* Swipe */
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:28px}
+.hint{font-weight:500;color:var(--moss)}
+.swipe{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 22px;margin-inline:calc(50% - 50vw);padding-inline:max(20px,calc(50vw - 590px));scrollbar-color:var(--moss) transparent}
+.panel{flex:0 0 min(78vw,420px);scroll-snap-align:start;border-radius:var(--r);padding:30px;min-height:340px;display:flex;flex-direction:column;justify-content:space-between;background:var(--paper)}
+.panel b{font-size:4.6rem;line-height:1;font-weight:600;letter-spacing:-.05em;color:var(--moss)}
+.panel:nth-child(2){background:var(--moss);color:#f4efe0}.panel:nth-child(2) b{color:#d9c79a}
+.panel:nth-child(3){background:#dccfa9}
+.panel:nth-child(4){background:var(--dark);color:#f4efe0}.panel:nth-child(4) b{color:#d9c79a}
+/* Asymmetrisches Raster */
+.duo{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}
+@media(max-width:760px){.duo{grid-template-columns:1fr}}
+.tile{border-radius:var(--r);padding:34px;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;position:relative;overflow:hidden;color:#fff;transition:transform .35s var(--ease)}
+.tile:hover{transform:scale(.985)}
+.w1{background:repeating-linear-gradient(97deg,rgba(0,0,0,.05) 0 3px,transparent 3px 11px),linear-gradient(135deg,#a2713c,#6e4724)}
+.w2{background:repeating-linear-gradient(83deg,rgba(255,255,255,.07) 0 2px,transparent 2px 9px),linear-gradient(135deg,#4c5d41,#2f3b28)}
+.tile p{margin-top:8px;opacity:.92}
+/* Bewertungen */
+.rev{display:grid;grid-template-columns:auto 1fr;gap:48px;align-items:center}
+@media(max-width:760px){.rev{grid-template-columns:1fr;gap:20px}}
+.big{font-size:clamp(5rem,14vw,10rem);font-weight:600;letter-spacing:-.06em;line-height:.9;color:var(--moss)}
+blockquote{background:var(--paper);border-radius:var(--r);padding:22px 26px;margin-bottom:14px;font-size:1.25rem;font-weight:500}
+blockquote small{display:block;font-size:.9rem;font-weight:400;margin-top:6px;opacity:.75}
+/* CTA-Band */
+.band{background:var(--dark);color:#f4efe0;border-radius:28px;padding:clamp(32px,6vw,72px);display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap}
+.band .btn{background:#e9dcb8;color:var(--dark)}
+.band .btn.o{background:transparent;color:#f4efe0;box-shadow:inset 0 0 0 1.5px #f4efe0}
+/* Unterseiten */
+.top{padding:150px 0 30px}
+.top p{margin-top:18px;font-size:1.15rem}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 22px}
+.tab{font:inherit;font-weight:600;padding:12px 22px;border-radius:999px;border:1.5px solid var(--ink);background:transparent;cursor:pointer;transition:background .25s,color .25s}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg)}
+.tp{display:none;background:var(--paper);border-radius:var(--r);padding:clamp(24px,4vw,48px);grid-template-columns:1fr 1fr;gap:36px}
+.tp.on{display:grid;animation:in .4s var(--ease)}
+@media(max-width:760px){.tp.on{grid-template-columns:1fr}}
+.tp ul{padding-left:20px}.tp li{margin:8px 0}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;font-size:1.15rem}
+details p{margin-top:10px}
+.note{font-size:.92rem;opacity:.75;margin-top:16px}
+/* Arbeiten */
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.ph{border-radius:var(--r);min-height:230px;padding:20px;display:flex;align-items:flex-end;color:#fff;font-weight:500;grid-column:span 2}
+.ph.wide{grid-column:span 4}.ph.hide{display:none}
+@media(max-width:760px){.ph,.ph.wide{grid-column:span 6;min-height:190px}}
+.ph span{background:rgba(0,0,0,.38);padding:6px 14px;border-radius:999px;font-size:.92rem}
+.ba{position:relative;border-radius:var(--r);overflow:hidden;height:min(52vw,380px);min-height:230px;background:linear-gradient(120deg,#e2c796,#cfae78)}
+.ba .after{position:absolute;inset:0;background:repeating-linear-gradient(97deg,rgba(0,0,0,.08) 0 3px,transparent 3px 12px),linear-gradient(120deg,#8a5a2b,#5b3a1b);clip-path:inset(0 0 0 50%)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:3}
+.ba .bar{position:absolute;top:0;bottom:0;left:50%;width:4px;background:#fff;z-index:2;pointer-events:none}
+.ba .bar::after{content:"";position:absolute;top:50%;left:50%;width:44px;height:44px;margin:-22px;border-radius:50%;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.ba em{position:absolute;bottom:14px;z-index:2;font-style:normal;background:rgba(0,0,0,.4);color:#fff;padding:5px 14px;border-radius:999px;font-size:.9rem}
+/* Kontakt */
+.contact{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;align-items:start}
+@media(max-width:860px){.contact{grid-template-columns:1fr}}
+.card{background:var(--paper);border-radius:var(--r);padding:clamp(22px,4vw,40px)}
+.steps{display:flex;gap:8px;margin-bottom:22px}
+.steps i{flex:1;height:5px;border-radius:9px;background:var(--line);transition:background .3s}
+.steps i.on{background:var(--moss)}
+.opts{display:grid;gap:10px}
+.opts label{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:14px;border:1.5px solid var(--line);cursor:pointer;font-weight:500;transition:border-color .2s,background .2s}
+.opts label:has(input:checked){border-color:var(--moss);background:rgba(76,93,65,.1)}
+.opts input{accent-color:var(--moss);width:20px;height:20px}
+.f{display:grid;gap:14px}
+.f label{display:grid;gap:6px;font-weight:500}
+.f input,.f textarea{font:inherit;padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);background:#fff;width:100%}
+.f textarea{min-height:120px;resize:vertical}
+.step{display:none}.step.on{display:block}
+.tel{font-size:clamp(1.6rem,4vw,2.3rem);font-weight:600;letter-spacing:-.02em;display:block;text-decoration:none;margin:6px 0 16px}
+.ok{display:none;margin-top:16px;padding:14px 18px;border-radius:12px;background:rgba(76,93,65,.14);font-weight:500}
+/* Footer + Anrufleiste */
+footer{padding:40px 0 20px;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.call{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:center;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0));background:var(--moss)}
+.call a{display:inline-flex;gap:10px;align-items:center;color:#fff;text-decoration:none;font-weight:600;padding:13px 30px;border-radius:999px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rings{transform:none!important}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Hauptnavigation">
+<a class="brand" href="#start">Schäffler Schreinerei</a>
+<a class="l" href="#start">Start</a><a class="l" href="#leistungen">Leistungen</a><a class="l" href="#arbeiten">Arbeiten</a><a class="l" href="#kontakt">Kontakt</a>
+</nav></header>
+
+<main>
+<!-- START -->
+<div class="page" id="start">
+<div class="hero">
+<svg class="rings" id="rings" viewBox="0 0 400 400" aria-hidden="true"><circle cx="200" cy="200" r="12"/><circle cx="202" cy="198" r="34"/><circle cx="199" cy="203" r="62"/><circle cx="203" cy="200" r="92"/><circle cx="198" cy="199" r="124"/><circle cx="201" cy="202" r="156"/><circle cx="200" cy="200" r="190"/></svg>
+<div class="wrap">
+<h1><span><i>Möbel nach Maß,</i></span><span><i>vom Tischler.</i></span></h1>
+<p class="lead">Manfred Schäffler ist Möbeltischler in Maselheim-Laupertshausen. Schreiben Sie ihm, was Sie brauchen, oder rufen Sie einfach an.</p>
+<div class="btns"><a class="btn" href="#kontakt">Anfrage stellen</a><a class="btn o" href="#leistungen">Leistungen ansehen</a></div>
+<div class="score"><span class="stars" aria-hidden="true">★★★★★</span> 4,9 von 5 · 9 Google-Bewertungen</div>
+</div></div>
+
+<section><div class="wrap head"><div><h2>Vom Gespräch bis zum Einbau</h2><p style="margin-top:12px">So läuft ein Möbelprojekt typischerweise ab. Der genaue Ablauf wird mit Herrn Schäffler abgestimmt.</p></div><span class="hint">Nach links wischen ›</span></div>
+<div class="swipe" tabindex="0" aria-label="Ablauf, horizontal scrollbar">
+<div class="panel"><b>1</b><div><h3>Sie melden sich</h3><p>Per Anfrage oder Anruf. Termine nach Vereinbarung.</p></div></div>
+<div class="panel"><b>2</b><div><h3>Sie besprechen es</h3><p>Maße, Holz und Ausführung klären Sie direkt mit dem Tischler.</p></div></div>
+<div class="panel"><b>3</b><div><h3>Es wird gefertigt</h3><p>Ihr Möbel entsteht in der Schreinerei in Laupertshausen.</p></div></div>
+<div class="panel"><b>4</b><div><h3>Es kommt zu Ihnen</h3><p>Lieferung und Einbau, damit es am Ende wirklich passt.</p></div></div>
+</div></section>
+
+<section><div class="wrap"><div class="duo">
+<a class="tile w1" href="#moebel"><h2>Möbel nach Maß</h2><p>Für Räume, die kein Standardmöbel füllt.</p></a>
+<a class="tile w2" href="#fenster"><h3>Fenster und Fensterbau</h3><p>Beratung und Ausführung aus einer Hand.</p></a>
+</div></div></section>
+
+<section><div class="wrap rev"><div><div class="big">4,9</div><p style="margin-top:12px"><span class="stars">★★★★★</span><br>9 Bewertungen bei Google</p></div>
+<div><blockquote>„Ein sehr kompetenter Schreiner.“<small>Andrea F., Google-Bewertung, 5 Sterne</small></blockquote><blockquote>„Top.“<small>Siegfried S., Google-Bewertung, 5 Sterne</small></blockquote></div></div></section>
+
+<section><div class="wrap"><div class="band"><div><h2>Haben Sie ein Projekt?</h2><p style="margin-top:12px">Anfrage in zwei Schritten oder direkt anrufen.</p></div><div class="btns" style="margin:0"><a class="btn" href="#kontakt">Anfrage stellen</a><a class="btn o" href="tel:+49735171780">Anrufen</a></div></div></div></section>
+</div>
+
+<!-- LEISTUNGEN -->
+<div class="page" id="leistungen">
+<div class="wrap top"><h1 style="font-size:clamp(2.4rem,7vw,5rem)">Was Sie hier bekommen</h1><p>Zwei Schwerpunkte, jeweils mit persönlicher Beratung. Wählen Sie aus, was zu Ihnen passt.</p></div>
+<div class="wrap"><div class="duo">
+<a class="tile w1" href="#moebel"><h2>Möbel nach Maß</h2><p>Für Räume, die kein Standardmöbel füllt. Mehr erfahren ›</p></a>
+<a class="tile w2" href="#fenster"><h3>Fenster und Fensterbau</h3><p>Beratung und Ausführung aus einer Hand. Mehr erfahren ›</p></a></div></div>
+<section><div class="wrap"><h2 style="margin-bottom:22px">Häufige Fragen</h2>
+<details><summary>Wie vereinbare ich einen Termin?</summary><p>Termine gibt es nach Vereinbarung. Senden Sie eine Anfrage oder rufen Sie unter +49 7351 71780 an.</p></details>
+<details><summary>Wo finde ich die Schreinerei?</summary><p>Ellmannsweiler Straße 9, 88437 Maselheim-Laupertshausen.</p></details>
+<details><summary>Was muss ich in der Anfrage angeben?</summary><p>Ein Satz zu Ihrem Vorhaben reicht. Alles Weitere klären Sie im Gespräch.</p></details></div></section>
+</div>
+
+<div class="page" id="moebel">
+<div class="wrap top"><a class="btn o" href="#leistungen" style="margin-bottom:26px">‹ Alle Leistungen</a><h1 style="font-size:clamp(2.4rem,7vw,5rem)">Möbel nach Maß</h1><p>Als Möbeltischler baut Manfred Schäffler Möbel, die auf Ihre Maße und Wünsche abgestimmt sind.</p>
+<div class="btns"><a class="btn" href="#kontakt" data-pre="Möbel nach Maß">Möbel nach Maß anfragen</a><a class="btn o" href="tel:+49735171780">Direkt anrufen</a></div></div>
+<div class="wrap"><div class="tp on"><div><h2>So gehen Sie vor</h2><p style="margin-top:14px">Holzart, Aufbau und Oberfläche besprechen Sie direkt mit ihm. So entsteht ein Möbel, das genau in Ihren Raum passt.</p></div><div><h3>Das klären Sie im Gespräch</h3><ul><li>Wofür das Möbel gebraucht wird</li><li>Maße und Platz im Raum</li><li>Holzart und Oberfläche</li><li>Zeitrahmen und Einbau</li></ul></div></div></div>
+<section><div class="wrap head"><h2>Vom Gespräch bis zum Einbau</h2><span class="hint">Nach links wischen ›</span></div>
+<div class="swipe" tabindex="0" aria-label="Ablauf, horizontal scrollbar">
+<div class="panel"><b>1</b><div><h3>Sie melden sich</h3><p>Per Anfrage oder Anruf. Termine nach Vereinbarung.</p></div></div>
+<div class="panel"><b>2</b><div><h3>Sie besprechen es</h3><p>Maße, Material und Ausführung klären Sie direkt mit dem Tischler.</p></div></div>
+<div class="panel"><b>3</b><div><h3>Es wird gefertigt</h3><p>In der Schreinerei in Laupertshausen.</p></div></div>
+<div class="panel"><b>4</b><div><h3>Es kommt zu Ihnen</h3><p>Lieferung und Einbau, damit am Ende alles passt.</p></div></div></div>
+<div class="wrap"><p class="note">Demo: Texte sind allgemein gehalten und werden mit Herrn Schäffler zu seinen tatsächlichen Leistungen ergänzt.</p></div></section>
+<section><div class="wrap"><div class="band"><div><h2>Haben Sie ein Projekt?</h2><p style="margin-top:12px">Anfrage in zwei Schritten oder direkt anrufen.</p></div><div class="btns" style="margin:0"><a class="btn" href="#kontakt" data-pre="Möbel nach Maß">Anfrage stellen</a><a class="btn o" href="#fenster">Fenster ansehen</a></div></div></div></section>
+</div>
+
+<div class="page" id="fenster">
+<div class="wrap top"><a class="btn o" href="#leistungen" style="margin-bottom:26px">‹ Alle Leistungen</a><h1 style="font-size:clamp(2.4rem,7vw,5rem)">Fenster</h1><p>Neben Möbeln gehört der Fensterbau zum Angebot der Schreinerei.</p>
+<div class="btns"><a class="btn" href="#kontakt" data-pre="Fenster">Fenster anfragen</a><a class="btn o" href="tel:+49735171780">Direkt anrufen</a></div></div>
+<div class="wrap"><div class="tp on"><div><h2>So gehen Sie vor</h2><p style="margin-top:14px">Schildern Sie Ihr Vorhaben, dann klärt Herr Schäffler mit Ihnen, was möglich ist und wie es eingebaut wird.</p></div><div><h3>Das klären Sie im Gespräch</h3><ul><li>Neubau oder Austausch</li><li>Maße und Anzahl</li><li>Material und Ausführung</li><li>Termin für Aufmaß und Einbau</li></ul></div></div></div>
+<section><div class="wrap head"><h2>Vom Gespräch bis zum Einbau</h2><span class="hint">Nach links wischen ›</span></div>
+<div class="swipe" tabindex="0" aria-label="Ablauf, horizontal scrollbar">
+<div class="panel"><b>1</b><div><h3>Sie melden sich</h3><p>Per Anfrage oder Anruf. Termine nach Vereinbarung.</p></div></div>
+<div class="panel"><b>2</b><div><h3>Sie besprechen es</h3><p>Maße, Material und Ausführung klären Sie direkt mit dem Tischler.</p></div></div>
+<div class="panel"><b>3</b><div><h3>Es wird gefertigt</h3><p>In der Schreinerei in Laupertshausen.</p></div></div>
+<div class="panel"><b>4</b><div><h3>Es kommt zu Ihnen</h3><p>Lieferung und Einbau, damit am Ende alles passt.</p></div></div></div>
+<div class="wrap"><p class="note">Demo: Texte sind allgemein gehalten und werden mit Herrn Schäffler zu seinen tatsächlichen Leistungen ergänzt.</p></div></section>
+<section><div class="wrap"><div class="band"><div><h2>Haben Sie ein Projekt?</h2><p style="margin-top:12px">Anfrage in zwei Schritten oder direkt anrufen.</p></div><div class="btns" style="margin:0"><a class="btn" href="#kontakt" data-pre="Fenster">Anfrage stellen</a><a class="btn o" href="#moebel">Möbel ansehen</a></div></div></div></section>
+</div>
+
+<!-- ARBEITEN -->
+<div class="page" id="arbeiten">
+<div class="wrap top"><h1 style="font-size:clamp(2.4rem,7vw,5rem)">Arbeiten</h1><p>Hier zeigt die fertige Seite Fotos echter Möbel und Fenster. Die Flächen unten sind Platzhalter einer Demo.</p></div>
+<div class="wrap"><div class="chips" role="group" aria-label="Filter">
+<button class="tab" aria-pressed="true" data-f="alle" aria-selected="true">Alle</button><button class="tab" data-f="moebel" aria-selected="false">Möbel</button><button class="tab" data-f="fenster" aria-selected="false">Fenster</button></div>
+<div class="grid">
+<div class="ph wide w1" data-k="moebel"><span>Demo-Platzhalter: Möbel, Foto folgt</span></div>
+<div class="ph w2" data-k="fenster"><span>Demo-Platzhalter: Fenster</span></div>
+<div class="ph w2" data-k="fenster"><span>Demo-Platzhalter: Fenster</span></div>
+<div class="ph wide w1" data-k="moebel"><span>Demo-Platzhalter: Möbel, Foto folgt</span></div>
+</div></div>
+<section><div class="wrap"><h2 style="margin-bottom:10px">Vorher und nachher</h2><p style="margin-bottom:22px">Schieben Sie den Regler. Mit echten Fotos zeigt er, wie aus rohem Holz ein fertiges Möbel wird.</p>
+<div class="ba"><div class="after"></div><div class="bar" id="bar"></div><em style="left:14px">Roh</em><em style="right:14px">Fertig</em><input type="range" min="0" max="100" value="50" aria-label="Vorher-nachher-Regler" id="rng"></div></div></section>
+</div>
+
+<!-- KONTAKT -->
+<div class="page" id="kontakt">
+<div class="wrap top"><h1 style="font-size:clamp(2.4rem,7vw,5rem)">Schreiben Sie uns, was Sie brauchen.</h1><p>Zwei kurze Schritte. Oder rufen Sie direkt an.</p></div>
+<div class="wrap contact">
+<div class="card"><div class="steps"><i class="on" id="s1"></i><i id="s2"></i></div>
+<form id="form" novalidate>
+<div class="step on" id="st1"><h3 style="margin-bottom:16px">Worum geht es?</h3><div class="opts">
+<label><input type="radio" name="a" value="Möbel nach Maß" checked>Möbel nach Maß</label>
+<label><input type="radio" name="a" value="Fenster">Fenster</label>
+<label><input type="radio" name="a" value="Etwas anderes">Etwas anderes</label></div>
+<div class="btns"><button class="btn" type="button" id="next">Weiter</button></div></div>
+<div class="step" id="st2"><h3 style="margin-bottom:16px">Ihre Angaben</h3><div class="f">
+<label>Ihr Vorhaben in ein paar Sätzen<textarea name="m" required></textarea></label>
+<label>Name<input name="n" autocomplete="name" required></label>
+<label>Telefon oder E-Mail<input name="k" required></label></div>
+<div class="btns"><button class="btn o" type="button" id="back">Zurück</button><button class="btn" type="submit">Anfrage senden</button></div></div>
+<div class="ok" id="ok" role="status">Ihr E-Mail-Programm öffnet sich mit der fertigen Anfrage. Bitte senden Sie sie dort ab. Demo: In der fertigen Seite geht sie direkt an Herrn Schäffler.<br><a class="btn" id="ml" href="mailto:manfred.schaeffler@t-online.de" style="margin-top:12px">Falls nichts passiert: E-Mail öffnen</a></div>
+</form></div>
+<div class="card"><h3>Direkt erreichen</h3><a class="tel" href="tel:+49735171780">+49 7351 71780</a>
+<p><a href="mailto:manfred.schaeffler@t-online.de">manfred.schaeffler@t-online.de</a></p>
+<p style="margin-top:14px">Ellmannsweiler Straße 9<br>88437 Maselheim-Laupertshausen</p>
+<p style="margin-top:14px"><b>Termine nach Vereinbarung.</b></p>
+<div class="btns"><a class="btn o" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Ellmannsweiler+Stra%C3%9Fe+9+88437+Maselheim">Route planen</a></div></div>
+</div></div>
+</main>
+
+<footer><div class="wrap"><div><b>Manfred Schäffler Schreinerei</b><br>Möbeltischler in Maselheim-Laupertshausen</div>
+<div>Demo-Entwurf von Weblift. Impressum und Datenschutz folgen mit den echten Firmenangaben.</div></div></footer>
+<div class="call"><a href="tel:+49735171780">Jetzt anrufen · +49 7351 71780</a></div>
+
+<script>
+(function(){
+var pages=["start","leistungen","moebel","fenster","arbeiten","kontakt"],titles={start:"Möbeltischler in Maselheim-Laupertshausen",leistungen:"Leistungen",moebel:"Möbel nach Maß",fenster:"Fenster",arbeiten:"Arbeiten",kontakt:"Kontakt"},navOf={moebel:"leistungen",fenster:"leistungen"};
+function go(h,keep){if(pages.indexOf(h)<0)h="start";
+pages.forEach(function(p){document.getElementById(p).classList.toggle("on",p===h)});
+var n=navOf[h]||h;
+document.querySelectorAll("nav a.l").forEach(function(a){if(a.getAttribute("href")==="#"+n)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+document.title="Manfred Schäffler Schreinerei – "+titles[h];window.scrollTo(0,0);
+if(!keep){try{history.pushState(null,"","#"+h)}catch(e){try{location.hash=h}catch(e2){}}}}
+document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='#']");if(!a)return;e.preventDefault();
+var pre=a.getAttribute("data-pre");if(pre){var r=document.querySelector("input[name=a][value='"+pre+"']");if(r)r.checked=true}
+go(a.getAttribute("href").slice(1))});
+function fromHash(){go((location.hash||"#start").slice(1),true)}
+addEventListener("popstate",fromHash);addEventListener("hashchange",fromHash);fromHash();
+var rings=document.getElementById("rings"),tick=false;
+addEventListener("scroll",function(){if(tick)return;tick=true;requestAnimationFrame(function(){var y=Math.min(scrollY,900);rings.style.transform="scale("+(1+y/700)+") rotate("+(y/12)+"deg)";tick=false})},{passive:true});
+document.querySelectorAll("[data-t]").forEach(function(b){b.onclick=function(){document.querySelectorAll("[data-t]").forEach(function(x){x.setAttribute("aria-selected",x===b)});document.querySelectorAll(".tp").forEach(function(p){p.classList.toggle("on",p.id===b.dataset.t)})}});
+document.querySelectorAll("[data-f]").forEach(function(b){b.onclick=function(){document.querySelectorAll("[data-f]").forEach(function(x){x.setAttribute("aria-selected",x===b);x.setAttribute("aria-pressed",x===b)});document.querySelectorAll(".ph").forEach(function(p){p.classList.toggle("hide",b.dataset.f!=="alle"&&p.dataset.k!==b.dataset.f)})}});
+var rng=document.getElementById("rng");rng.oninput=function(){document.querySelector(".after").style.clipPath="inset(0 0 0 "+rng.value+"%)";document.getElementById("bar").style.left=rng.value+"%"};
+function step(n){document.getElementById("st1").classList.toggle("on",n===1);document.getElementById("st2").classList.toggle("on",n===2);document.getElementById("s2").classList.toggle("on",n===2)}
+document.getElementById("next").onclick=function(){step(2)};document.getElementById("back").onclick=function(){step(1)};
+document.getElementById("form").onsubmit=function(e){e.preventDefault();var f=e.target,m=f.m.value.trim(),n=f.n.value.trim(),k=f.k.value.trim();
+if(!m||!n||!k){f.querySelectorAll("textarea,input[name=n],input[name=k]").forEach(function(i){i.style.borderColor=i.value.trim()?"":"#a33"});return}
+var body="Anliegen: "+f.a.value+"\n\n"+m+"\n\nName: "+n+"\nKontakt: "+k;
+document.getElementById("ok").style.display="block";
+var ml=document.getElementById("ml");ml.href="mailto:manfred.schaeffler@t-online.de?subject="+encodeURIComponent("Anfrage: "+f.a.value)+"&body="+encodeURIComponent(body);ml.click()};
+})();
+</script>
+</body>
+</html>
